@@ -14,36 +14,13 @@
         }
     });
 
-//    new Vue({
-//              el: "#app-3",
-//              methods: {
-//                  greet: function (event) {
-//                      alert('Hello Ted')
-//                      alert(event.target.tagName)
-//                  }
-//              }
-//          });
-
-//    new Vue({
-//        el: "#app-3",
-//        data: {
-//            msg: null
-//        },
-//        methods: {
-//        greet: function (response) {
-//             this.$http.get(msg).then(function(response) {
-//                this.list = response
-//             })
-//            }
-//        }
-//    });
-
     new Vue({
             el: "#app-3",
             methods: {
             greet: function (response) {
-                 this.$http.get('/hello/greeting').then(function(response) {
-                    alert(response.name)
+                 this.$http.get('/hello/greeting?name=Jong').then(function(response) {
+                 // response.data refers to the whole data.
+                    alert(response.data.name)
                  })
                 }
             }
