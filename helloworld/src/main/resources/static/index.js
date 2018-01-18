@@ -10,7 +10,7 @@
     new Vue({
         el: '#app-2',
         data: {
-            message: 'nah nah'
+            message: 'Testing testing!'
         }
     });
 
