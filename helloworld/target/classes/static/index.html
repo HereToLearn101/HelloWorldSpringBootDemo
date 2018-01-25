@@ -5,23 +5,17 @@
     <title>Home Page</title>
 </head>
 <body>
-    This is my home page!
-    <div id="app">
-        {{ message }}
-    </div>
-    <div id="app-2">
-        {{ message }}
-    </div>
     <div id="app-3">
         <button v-on:click="greet">Greet</button>
     </div>
     <br>
-    <div>
-        <p>Testing User Inputs with Vue JS and with REST...</p>
-        <input v-model="testing" placeholder="edit me">
-        <p>Message is: {{ testing }}</p>
-    </div>
     <div id='example'>
+        <p>Testing User Inputs with Vue JS and with REST...</p>
+        <input v-model="message" placeholder="edit me">
+        <p>Message is: {{ message }}</p>
+    </div>
+
+    <div id='example-2'>
         <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
         <label for="jack">Jack</label>
         <input type="checkbox" id="john" value="John" v-model="checkedNames">

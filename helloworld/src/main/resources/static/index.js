@@ -13,7 +13,14 @@
         });
 
     new Vue({
-        el: 'example',
+        el: '#example',
+        data: {
+            message: ''
+        }
+    });
+
+    new Vue({
+        el: '#example-2',
         data: {
             checkedNames: []
         }

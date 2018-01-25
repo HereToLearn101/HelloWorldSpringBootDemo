@@ -1,20 +1,6 @@
 (function () {
 
     new Vue({
-        el: '#app',
-        data: {
-            message: 'You have successfully applied vue.js'
-        }
-    });
-
-    new Vue({
-        el: '#app-2',
-        data: {
-            message: 'Testing testing!'
-        }
-    });
-
-    new Vue({
             el: "#app-3",
             methods: {
             greet: function (response) {
@@ -27,7 +13,14 @@
         });
 
     new Vue({
-        el: 'example',
+        el: '#example',
+        data: {
+            message: ''
+        }
+    });
+
+    new Vue({
+        el: '#example-2',
         data: {
             checkedNames: []
         }
