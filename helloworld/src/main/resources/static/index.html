@@ -5,30 +5,46 @@
     <title>Home Page</title>
 </head>
 <body>
-    <div id="app-3">
-        <button v-on:click="greet">Greet</button>
-    </div>
+<div id="app-3">
+    <button v-on:click="greet">Greet</button>
+</div>
+<br>
+<p>-------------Testing User Inputs with Vue JS, NON-REST...------------</p>
+<div id="example">
+    <input v-model="message" placeholder="edit me">
+    <p>Message is: {{ message }}</p>
+</div>
+
+<div id="example-2">
+    <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+    <label for="jack">Jack</label>
+    <input type="checkbox" id="john" value="John" v-model="checkedNames">
+    <label for="john">John</label>
+    <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+    <label for="mike">Mike</label>
     <br>
-    <div id='example'>
-        <p>Testing User Inputs with Vue JS and with REST...</p>
-        <input v-model="message" placeholder="edit me">
-        <p>Message is: {{ message }}</p>
-    </div>
+    <span>Checked names: {{ checkedNames }}</span>
+</div>
+<p>-------------------------------------------------------------------------</p>
+<br>
+<p>-------------Testing User Inputs with Vue JS and with REST...------------</p>
+<div id='restInputDiv'>
+    <form>
+        <input v-model="name" placeholder="type your name and submit">
+        <button v-on:click="submitName">Submit</button>
+    </form>
+</div>
+<br>
+<div id="restInputDiv2">
+    <form v-on:submit.prevent="getFormValue">
+        <input type="text" v-model="name" placeholder="type name and enter">
+    </form>
+</div>
 
-    <div id='example-2'>
-        <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
-        <label for="jack">Jack</label>
-        <input type="checkbox" id="john" value="John" v-model="checkedNames">
-        <label for="john">John</label>
-        <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
-        <label for="mike">Mike</label>
-        <br>
-        <span>Checked names: {{ checkedNames }}</span>
-    </div>
+<p>-------------------------------------------------------------------------</p>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.5"></script>
-    <script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.5"></script>
+<script src="index.js"></script>
 </body>
 </html>
