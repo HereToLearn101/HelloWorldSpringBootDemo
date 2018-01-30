@@ -28,10 +28,10 @@
 <p>-------------------------------------------------------------------------</p>
 <br>
 <p>-------------Testing User Inputs with Vue JS and with REST...------------</p>
-<div id='restInputDiv'>
-    <form>
+<div id="restInputDiv">
+    <form v-on:submit.prevent="submitName">
         <input v-model="name" placeholder="type your name and submit">
-        <button v-on:click="submitName">Submit</button>
+        <button>Submit</button>
     </form>
 </div>
 <br>
