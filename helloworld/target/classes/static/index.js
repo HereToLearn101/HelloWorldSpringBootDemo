@@ -58,5 +58,16 @@
             }
         });
 
+//    new Vue ({
+//        el: '#addUserDiv',
+//        methods: {
+//            addNewUser: function () {
+//                this.$http.get('/demo/add?name=ted&email=newemail@gmail.com').then(function(response) {
+//                    alert(response.data);
+//                })
+//            }
+//        }
+//    });
+
 })();
 
